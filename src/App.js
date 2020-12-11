@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Content, Footer, FooterSection, FooterDropDownSection, FooterLinkList } from 'react-mdl';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 // import Main from "./components/main";
 import { Link } from 'react-router-dom';
 
@@ -9,13 +11,13 @@ class App extends Component {
     return (
       <div className="demo-big-content">
         <Layout>
-          <Header className="header-color" title={<Link style={{ textDecoration: 'none', color: 'white' }} to="/">Growologie</Link>} scroll>
-            <Navigation>
+          <Header className="header-color" title={<Link style={{ textDecoration: 'none', color: 'white', }} to="/">Growologie</Link>} scroll>
+            {/* <Navigation>
               <Link ripple to="/process">Process</Link>
               <Link ripple to="/projects">Projects</Link>
               <Link ripple to="/resume">Resume</Link>
               <Link ripple to="/contact">Contact</Link>
-            </Navigation>
+            </Navigation> */}
           </Header>
           <Content>
             <div className="page-content" />
@@ -57,6 +59,7 @@ class App extends Component {
             </FooterSection>
             <FooterSection type="bottom" logo="Title">
               <FooterLinkList>
+              <FontAwesomeIcon icon={['fab', 'google']} />
                 <a href="#">Help</a>
                 <a href="#">Privacy & Terms</a>
               </FooterLinkList>
