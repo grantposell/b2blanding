@@ -23,8 +23,8 @@ class App extends Component {
             <div className="page-content" />
             {/* <Main></Main> */}
           </Content>
-          <Footer size="mega">
-            <FooterSection type="middle">
+          <Footer size="mini">
+            {/* <FooterSection type="middle">
               <FooterDropDownSection title="Features">
                 <FooterLinkList>
                   <a href="#">About</a>
@@ -56,12 +56,15 @@ class App extends Component {
                   <a href="#">Contact Us</a>
                 </FooterLinkList>
               </FooterDropDownSection>
-            </FooterSection>
-            <FooterSection type="bottom" logo="Title">
+            </FooterSection> */}
+            <FooterSection type="left" logo="Growologie, LLC © 2020" style={{ color: 'white',}}>
               <FooterLinkList>
-              <FontAwesomeIcon icon={['fab', 'google']} />
-                <a href="#">Help</a>
-                <a href="#">Privacy & Terms</a>
+                <FontAwesomeIcon icon={['fab', 'google']} />
+                <a href="#">About</a>
+                <a href="#">Career</a>
+                <a href="#">Newsroom</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
               </FooterLinkList>
             </FooterSection>
           </Footer>
