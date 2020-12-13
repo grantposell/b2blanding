@@ -16,11 +16,12 @@ class App extends Component {
           <Footer size="mini" style={{ backgroundColor: 'black' }}>
             <FooterSection type="left" style={{ color: 'white', }}>
               <FooterLinkList>
-                <a href="#">Growologie © 2020</a>
-                <a href="#">Careers</a>
+                <a href="/about">Growologie © 2020</a>
+                <a href="/careers">Careers</a>
+                {/* <a href="/invest">Investors</a> */}
                 {/* <a href="#">Newsroom</a> */}
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/termsofservice">Terms of Service</a>
               </FooterLinkList>
             </FooterSection>
           </Footer>
