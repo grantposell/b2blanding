@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Layout, Header, Content, Footer, FooterSection, FooterLinkList } from 'react-mdl';
 import './App.css';
+import Main from "./components/main";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom';
 
@@ -12,6 +13,7 @@ class App extends Component {
           <Header class="header-color" title={<Link class="link" to="/">Growologie</Link>} scroll>
           </Header>
           <Content style={{ backgroundColor: '#f4f4f4' }}>
+            <Main></Main>
           </Content>
           <Footer size="mini" style={{ backgroundColor: 'black' }}>
             <FooterSection type="left" style={{ color: 'white', }}>
@@ -20,8 +22,8 @@ class App extends Component {
                 <a href="/careers">Careers</a>
                 {/* <a href="/invest">Investors</a> */}
                 {/* <a href="#">Newsroom</a> */}
-                <a href="/privacy">Privacy Policy</a>
-                <a href="/termsofservice">Terms of Service</a>
+                {/* <a href="/privacy">Privacy Policy</a>
+                <a href="/termsofservice">Terms of Service</a> */}
               </FooterLinkList>
             </FooterSection>
           </Footer>
